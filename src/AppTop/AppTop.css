@@ -1,0 +1,11 @@
+.AppTop{
+    background-color: var(--primary);
+    width: 100%;
+    font-size: 0.875rem;
+    color: var(--color-white);
+    text-align: center;
+    height: var(--heightOfAppTop);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

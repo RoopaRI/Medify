@@ -1,9 +1,14 @@
 import React from "react";
 import './App.css';
+import AppTop from "./AppTop/AppTop";
+import HomePage from "./HomePage/HomePage";
 
 function App() {
   return (
-    <h1>Medify</h1>
+    <div>
+      <AppTop />
+      <HomePage />
+    </div>
   );
 }
 

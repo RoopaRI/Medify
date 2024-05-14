@@ -1,0 +1,44 @@
+.nav{
+    display: flex;
+    gap:3rem;
+}
+
+.navLinksDiv{
+    display: flex;
+    gap: 3rem;
+    font-size: 0.875rem;
+    font-weight: 400px;
+}
+
+.navLink{
+    cursor: pointer;
+    font-weight: 400;
+}
+.navLink-inner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border: 0.375rem solid rgba(0, 0, 0, 0); /*0.375rem = 6px*/
+    transition: all 250ms;
+    border-left: 0;
+    border-right: 0;
+}
+
+.navLink-inner:hover{
+    border-bottom: 0.375rem solid var(--primary);
+}
+
+.navLink-selected{
+    color: var(--primary);
+    border-color: var(--primary);
+    font-weight: 600;
+}
+
+.navBody{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--linksGap);
+    height: 100%;
+    padding:10px 30px 10px 30px;
+}
