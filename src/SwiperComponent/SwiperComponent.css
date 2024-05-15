@@ -42,29 +42,39 @@
     border:1px solid var(--primary);
 }
 
+h3{
+    color: var(--dark);
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
  @media screen and (max-width: 2200px) {
-    .CardHolder{
+    .CardHolder-offers{
         top:65rem;
+    }
+    .CardHolder-persons{
+        top:380%;
     }
 }
 
 
 @media screen and (max-width: 1200px) {
-    .CardHolder{
+    .CardHolder-offers{
         top:90rem;
     }
 }
 
 /* screens below 900px */
  @media screen and (max-width: 900px) and (min-width: 500px) {
-    .CardHolder{
+    .CardHolder-offers{
         top: 90rem;
     }
 }
 
 /* screens below 500px */
  @media screen and (max-width: 500px) {
-    .CardHolder{
+    .CardHolder-offers{
         top: 95rem;
     }
 } 
