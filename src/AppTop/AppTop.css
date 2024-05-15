@@ -9,3 +9,13 @@
     align-items: center;
     justify-content: center;
   }
+
+  .appTopSlide{
+    width:100%;
+}
+
+@media screen and (max-width: 600px){
+    .appTopSlide{
+        
+    }
+}

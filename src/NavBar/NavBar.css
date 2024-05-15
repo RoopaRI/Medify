@@ -1,5 +1,7 @@
 .nav{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap:3rem;
 }
 
@@ -10,6 +12,15 @@
     font-weight: 400px;
 }
 
+.navBody{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--linksGap);
+    height: 100%;
+    padding:10px 30px 10px 30px;
+}
+
 .navLink{
     cursor: pointer;
     font-weight: 400;
@@ -18,7 +29,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    border: 0.375rem solid rgba(0, 0, 0, 0); /*0.375rem = 6px*/
+    border: 0.375rem solid rgba(0, 0, 0, 0); 
     transition: all 250ms;
     border-left: 0;
     border-right: 0;
@@ -34,11 +45,32 @@
     font-weight: 600;
 }
 
-.navBody{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--linksGap);
-    height: 100%;
-    padding:10px 30px 10px 30px;
+.menuIcon {
+    cursor: pointer;
+    display:none;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .menuIcon{
+        display:block;
+        height:30px;
+        width:30px;
+    }
+    .navLinksDiv {
+        display: none;
+        flex-direction: column;
+    }
+    .HeroBody{
+        margin-top: 0;
+    }
+    .heroTexts{
+        margin-top: 0;
+    }
+    .navLinksDiv.show {
+        display: block; /* Show the links when .show class is applied */
+        
+      }
+      
 }

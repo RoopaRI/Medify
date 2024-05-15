@@ -5,7 +5,7 @@ const text="The health and well-being of our patients and their health care team
 export default function AppTop(){
     return(
         <div className='AppTop'>
-            <marquee>{text}</marquee>
+            <marquee direction="left" className="appTopSlide">{text}</marquee>
         </div>
     );
 }
