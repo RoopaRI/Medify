@@ -49,6 +49,15 @@ h3{
     text-align: center;
 }
 
+.person{
+    display:flex;
+    flex-direction: row;
+}
+.personSlide{
+    display:flex;
+    flex-direction: column;
+}
+
  @media screen and (max-width: 2200px) {
     .CardHolder-offers{
         top:65rem;

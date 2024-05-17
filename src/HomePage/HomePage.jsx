@@ -8,6 +8,7 @@ import Blogs from "../Blogs&News/Blogs&News";
 import Families from "../Families/Families";
 import FAQ from "../FAQ/FAQ";
 import Download from "../Download/Download";
+import Footer from "../Footer/Footer";
 
 export default function HomePage(){
     return(
@@ -22,6 +23,7 @@ export default function HomePage(){
             <Families />
             <FAQ />
             <Download />
+            <Footer />
         </div>
         
     );
