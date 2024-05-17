@@ -84,7 +84,7 @@ export default function SwiperComponent({type, classForMargin}){
                     }}
                     loop={true}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper"
+                   
                 >
                     {/* {displayCards()} */}
                     <SwiperSlide><Discount cardNo={1}/></SwiperSlide>
@@ -112,21 +112,22 @@ export default function SwiperComponent({type, classForMargin}){
                     delay: 2500,
                     disableOnInteraction: false,
                     }}
-                    
+                    width={393}
                     pagination={{
                     clickable: true,
                     }}
                     loop={true}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper"
+                  
                 >
                     {/* {displayCards()} */}
-                    
+        
                     <SwiperSlide><SpecialistCard cardNo={1000} name={doctorsData[0].name} specialization={doctorsData[0].specialization} image={doctorsData[0].image} /></SwiperSlide>
                     <SwiperSlide><SpecialistCard cardNo={2000} name={doctorsData[1].name} specialization={doctorsData[1].specialization} image={doctorsData[1].image} /></SwiperSlide>
                     <SwiperSlide><SpecialistCard cardNo={3000} name={doctorsData[2].name} specialization={doctorsData[2].specialization} image={doctorsData[2].image} /></SwiperSlide>
                     <SwiperSlide><SpecialistCard cardNo={4000} name={doctorsData[3].name} specialization={doctorsData[3].specialization} image={doctorsData[3].image} /></SwiperSlide>
                     <SwiperSlide><SpecialistCard cardNo={5000} name={doctorsData[4].name} specialization={doctorsData[4].specialization} image={doctorsData[4].image} /></SwiperSlide>
+                    
                 </Swiper>
                 <div className='RadioButtons'>
             
