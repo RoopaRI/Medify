@@ -80,6 +80,14 @@
     top: 150px;
 }
 
+.CommonSubText{
+    font-size: 17px;
+    font-weight: 400;
+    color: #5C6169;
+    line-height: 2rem;
+    max-width: 570px;
+}
+
 @media screen and (max-width:2200px){
     .PatientCaring{
         top:520%;

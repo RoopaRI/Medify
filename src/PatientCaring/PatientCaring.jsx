@@ -24,7 +24,7 @@ export default function PatientCaring () {
                     <h1 className='heroHeadline patientCaringHeadLine'>
                         Patient <span>Caring</span>
                     </h1>
-                    <p className='heroSubtext patientCaringSubtext'>{subText}</p>
+                    <div className='heroSubtext patientCaringSubtext CommonSubText'>{subText}</div>
                     
                     <div className='noteList'>
                         <div className='noteListItem'><img src={blueTick} alt="blue tick"/><span>{note1}</span></div>
