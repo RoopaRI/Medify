@@ -14,7 +14,7 @@ export default function Blogs(){
                         <span>Medical</span>
                         <span>March 31, 2022</span>
                     </div>
-                    <div className='blogTitle'><p>6 Tips To Protect Your Mental Health When You’re Sick</p></div>
+                    <div className='blogTitle'><div className="CommonSubText">6 Tips To Protect Your Mental Health When You’re Sick</div></div>
                     <div className='author'>
                         <img src={person} className='authorImage' alt='author'/>
                         <span className='authorName'>Rebecca Lee</span>
