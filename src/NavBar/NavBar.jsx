@@ -5,12 +5,12 @@ import Logo from "../Logo/Logo";
 import Button from "../Button/Button";
 import menuIcon from "../assets/Medify_assests/hamburger.png";
 import {Link} from "react-router-dom";
+import SearchBar from '../SearchBar/SearchBar';
 
 
 export default function NavBar(props){
     const { atHomePage, atFindPage, atBookingsPage, backColor } = props;
     
-    const [showNavLinks, setShowNavLinks] = useState(false);
     const [menuPoisition, setMenuPosition] = useState("hideMenu");
     const navLinks = ["Find Doctors", "Hospitals", "Medicines", "Surgeries", "Software for Provider", "Facilities"];
 
@@ -39,7 +39,7 @@ export default function NavBar(props){
         navLinks.forEach((item, index) => {
             transitionDelay = {transitionDelay: `${delay++}00ms`} 
             let goto = "#";
-            if(item == "Find Doctors") goto = "/find";
+            if(item === "Find Doctors") goto = "/find";
             return arr.push(
                 <Link onClick={handleMenuClick} to={goto} style={transitionDelay} className={`menuItem ${menuPoisition}`}>
                     {item}
@@ -54,7 +54,7 @@ export default function NavBar(props){
     const NavSearch = () => {
         if(atFindPage) return (
             <div className={"NavSearch"}>
-                
+                <SearchBar />
             </div>
         )
     }
@@ -65,6 +65,18 @@ export default function NavBar(props){
         return (
             <div className='navbarBottom'>
                 <span className='navbarBottomPatch'></span>
+            </div>
+        )
+    }
+
+
+    const BookingSearch = () => {
+        if(atBookingsPage) return (
+            <div className={"BookingSearch"}>
+                <span className='bookingsHeadline'>My Bookings</span>
+                <div className='navSearchWrapper'>
+                    <SearchBar atBookingsPage={true}/>
+                </div>
             </div>
         )
     }
@@ -95,6 +107,7 @@ export default function NavBar(props){
             </div>
             </div>
             <NavSearch />
+            <BookingSearch />
         </nav>
         <NavbarBottom />
         </>

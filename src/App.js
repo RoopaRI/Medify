@@ -6,6 +6,7 @@ import {BookingsContext, FoundHospitalsContext} from "./Context/Context";
 import FindPage from "./FindPage/FindPage";
 import Download from "./Download/Download";
 import Footer from "./Footer/Footer";
+import BookingsPage from './BookingPage/BookingPage';
 
 function App() {
   const [bookings, setBookings] = useState([]);
@@ -26,7 +27,7 @@ function App() {
                 <Route path='/' exact element={<HomePage />} />
                 <Route path='/home' exact element={<HomePage />} />
                 <Route path='/find' exact element={<FindPage />} />
-                {/* <Route path='/bookings' exact element={ <BookingsPage />} /> */}
+                <Route path='/bookings' exact element={ <BookingsPage />} />
               </Routes>
             </BrowserRouter>
           </FoundHospitalsContext.Provider>

@@ -7,6 +7,7 @@ import medicalStore from "../assets/Medify_assests/communities/Drugstore.png";
 import ambulance from "../assets/Medify_assests/communities/Ambulance.png";
 import { Link } from "react-router-dom";
 import Card from "../Card/Card";
+import SearchBar from "../SearchBar/SearchBar";
 
 export default function SearchComponent(){
 
@@ -23,9 +24,9 @@ export default function SearchComponent(){
     return(
         <div className='SearchComp'>
             <div className='commonContainer SearchCompBody'>
-                {/* <Link to="/find">
+                <Link to="/find">
                     <SearchBar atHomePage={true}/>
-                </Link> */}
+                </Link>
                 <div className='cardsDivWrapper'>
                     <p>You may be looking for</p>
                     <div className='cardsDiv'>
