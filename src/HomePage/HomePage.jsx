@@ -4,6 +4,7 @@ import HeroSection from "../HeroSection/HeroSection";
 import SwiperComponent from "../SwiperComponent/SwiperComponent";
 import Specialisation from "../Specialisation/Specialisation";
 import PatientCaring from "../PatientCaring/PatientCaring";  
+import Blogs from "../Blogs&News/Blogs&News";
 
 export default function HomePage(){
     return(
@@ -14,6 +15,7 @@ export default function HomePage(){
             <Specialisation />
             <SwiperComponent type="persons" classForMargin={"CardHolder-persons"}/>
             <PatientCaring/>
+            <Blogs />
         </div>
         
     );
