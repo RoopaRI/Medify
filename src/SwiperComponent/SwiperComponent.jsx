@@ -129,13 +129,6 @@ export default function SwiperComponent({type, classForMargin}){
                     <SwiperSlide><SpecialistCard cardNo={5000} name={doctorsData[4].name} specialization={doctorsData[4].specialization} image={doctorsData[4].image} /></SwiperSlide>
                     
                 </Swiper>
-                <div className='RadioButtons'>
-            
-                    <input className='radioButton' type="radio" id="radioButton1" name="radioButton" /> 
-                    <input className='radioButton' type="radio" id="radioButton2" name="radioButton" />
-                    <input className='radioButton' type="radio" id="radioButton3" name="radioButton" />
-            
-                 </div>
             </div> }
             
         </div>
