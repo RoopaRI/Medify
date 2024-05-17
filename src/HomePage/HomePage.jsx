@@ -7,12 +7,12 @@ import PatientCaring from "../PatientCaring/PatientCaring";
 import Blogs from "../Blogs&News/Blogs&News";
 import Families from "../Families/Families";
 import FAQ from "../FAQ/FAQ";
-import Download from "../Download/Download";
-import Footer from "../Footer/Footer";
+import AppTop from "../AppTop/AppTop";
 
 export default function HomePage(){
     return(
         <div>
+            <AppTop />
             <NavBar atHomePage={true}/>
             <HeroSection />
             <SwiperComponent type="offers" classForMargin={"CardHolder-offers"}/>
@@ -22,8 +22,6 @@ export default function HomePage(){
             <Blogs />
             <Families />
             <FAQ />
-            <Download />
-            <Footer />
         </div>
         
     );
