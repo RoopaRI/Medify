@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import "./SearchResults.css";
-import checkIcon from "../../assets/checkBadge.svg"
-// import ResultCard from '../ResultCard/ResultCard';
+import checkIcon from "../assets/Medify_assests/check.png"
+import ResultCard from "../ResultCard/ResultCard";
 
 import { FoundHospitalsContext } from "../Context/Context";
 
@@ -10,27 +10,22 @@ const headline = "medical centers available in";
 const subText = "Book appointments with minimum wait-time & verified doctor details";
 const SearchResults = () => {
     
-    //context
     const [foundHospitals, setFoundHospitals] = useContext(FoundHospitalsContext);
-    //functions
+
     const displayCards = () => {
         if(!foundHospitals) return null;
-        if(foundHospitals?.hospitals?.length == 0) return null;
+        if(foundHospitals?.hospitals?.length === 0) return null;
 
         return foundHospitals.hospitals.map(item => {
-            // console.log(item["Hospital Name"])
-            // console.log(item["County Name"])
-            // console.log(item["City"])
-            // console.log(item["Hospital overall rating"])
+
             return (
-                // <ResultCard 
-                //     hospitalName={item["Hospital Name"]}
-                //     county={item["County Name"]}
-                //     city={item["City"]}
-                //     rating={item["Hospital overall rating"]}
-                //     hospitalType={item["Hospital Type"]}
-                // />
-                SearchResults
+                <ResultCard 
+                    hospitalName={item["Hospital Name"]}
+                    county={item["County Name"]}
+                    city={item["City"]}
+                    rating={item["Hospital overall rating"]}
+                    hospitalType={item["Hospital Type"]}
+                />
             )
         });
     }
@@ -46,7 +41,6 @@ const SearchResults = () => {
                 </div>
                 <div className='cardAndSensodyne'>
                     <aside className='resultCardsArray'>
-                        {/* <ResultCard /> */}
                         {displayCards()}
                     </aside>
                     <aside className='sensodyne'></aside>

@@ -7,6 +7,7 @@ import loadingIcon from "../assets/Medify_assests/loading.svg";
 import Button from "../Button/Button";
 import { BookingsContext, FoundHospitalsContext } from "../Context/Context";
 import { findLocations, findBookings } from "../Functions/Functions";
+import SearchPop from "./SearchPop";
 
 const api = "https://meddata-backend.onrender.com";
 const allSates = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","DC","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","PR","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","VI","Wyoming","AS","GU","MP"]
@@ -136,7 +137,7 @@ export default function SearchBar(props){
                 id='hospitalName'
                 required
                 />
-                {/* <SearchPop atBookingsPage={true} hospitals={filteredHospitals} clickFunction={clickStateSuggestions}/> */}
+                <SearchPop atBookingsPage={true} hospitals={filteredHospitals} clickFunction={clickStateSuggestions}/>
             </span>
         )
     }
@@ -153,7 +154,7 @@ export default function SearchBar(props){
                 id='state'
                 required
                 />
-                {/* <SearchPop locations={filteredStates} clickFunction={clickStateSuggestions}/> */}
+                <SearchPop locations={filteredStates} clickFunction={clickStateSuggestions}/>
             </span>
             
             <span className={`inputWrapper ${disableCityInput}`}>
@@ -167,7 +168,7 @@ export default function SearchBar(props){
                 required
                 disabled={displayInputs ? false : true}
                 />
-                {/* <SearchPop locations={filteredCities} clickFunction={clickCitySuggetions}/> */}
+                <SearchPop locations={filteredCities} clickFunction={clickCitySuggetions}/>
             </span>
             </>
         )
